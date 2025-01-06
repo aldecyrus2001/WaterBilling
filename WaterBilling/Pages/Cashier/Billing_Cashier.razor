@@ -27,9 +27,103 @@
 			<td>2024-12-16</td>
 			<td class="text-end" style="vertical-align: middle;">
 				<div class="d-flex justify-content-center">
-					<button class="btn btn-success btn-sm">Pay</button>
+					<button class="btn btn-success btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Pay</button>
 				</div>
 			</td>
 		</tr>
 	</tbody>
 </table>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" style="width: 750px; max-width: 100%;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Payment Form | 123456</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="row g-2 mb-2">
+					<div class="col">
+						<label for="input1" class="form-label">First Name</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Middle Name</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Last Name</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+				</div>
+				<div class="row g-2 mb-2">
+					<div class="col">
+						<label for="input1" class="form-label">Address</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Contact Number</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Date Installation</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+				</div>
+				<hr />
+				<div class="row g-2 mb-2">
+					<p>12345 - 1234 - 12345</p>
+					<div class="col">
+						<label for="input1" class="form-label">Previous Reading</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Current Reading</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Usage</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+				</div>
+				<div class="row g-2 mb-2">
+					<div class="col">
+						<label for="input1" class="form-label">Bill Amount</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Penalty</label>
+						<input type="number" id="input1" class="form-control">
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Total</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+				</div>
+				<div class="row g-2 mb-2">
+					<div class="col">
+						<label for="input1" class="form-label">Received Money</label>
+						<input type="number" id="input1" class="form-control">
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Change</label>
+						<input type="text" id="input1" class="form-control" readonly>
+					</div>
+					<div class="col">
+						<label for="input1" class="form-label">Mode of Payment</label>
+						<select class="form-control">
+							<option value="N/A" selected disabled>- Please select mode of payment -</option>
+							<option value="Cash">Cash</option>
+							<option value="Bank Transfer">Bank Transfer</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-success">Accept</button>
+			</div>
+		</div>
+	</div>
+</div>
