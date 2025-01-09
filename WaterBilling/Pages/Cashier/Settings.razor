@@ -1,0 +1,71 @@
+﻿@page "/CashierSettings"
+
+<section>
+    <h5>Account</h5>
+    <p class="text-muted">Real-time information and activities of your property.</p>
+    <hr>
+
+    <!-- Full Name Section -->
+    <div class="mb-4">
+        <label class="form-label">Fullname</label>
+        <p class="text-muted">Modify your current fullname.</p>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label class="form-label">First name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Middle name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label class="form-label">Last name</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-outline-primary mt-3" >Update Fullname</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Email Section -->
+    <div class="mb-4">
+        <label class="form-label">Contact email</label>
+        <p class="text-muted">Manage your account's email address for the invoices.</p>
+        <div class="d-flex align-items-center">
+            <input type="email" class="form-control me-2">
+            <button class="btn btn-outline-primary" style="width: 300px;">Update email</button>
+        </div>
+    </div>
+
+    <!-- Password Section -->
+    <div class="mb-4">
+        <label class="form-label">Password</label>
+        <p class="text-muted">Modify your current password.</p>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label class="form-label">Current Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">New Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label class="form-label">Confirm New Password</label>
+                <input type="password" class="form-control">
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-outline-primary mt-3">Update Password</button>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+@code {
+
+}
